@@ -22,7 +22,7 @@ W późniejszej fazie zajęć, w zależności od możliwości, może pojawić si
 
 ## 1. Sylabus
 
-TBA
+[Sylabus](17S2-ADZ2024Z-1.pdf)
 
 ## 2. Forma zajęć
 
@@ -39,7 +39,7 @@ Temat i zakres projektu zostanie przedstawiony na 2-3 spotkaniu.
 
 ## 4. Materiały
 
-TBA
+Pozycje w sylabusie oraz dokumentacja dostarczana w poszczególnych zajęciach w postaci skróconej lub jako odwołania do oficjalnej dokumentacji.
 
 
 
