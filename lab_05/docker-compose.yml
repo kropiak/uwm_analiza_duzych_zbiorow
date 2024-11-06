@@ -1,0 +1,13 @@
+services:
+  spark-master-3.5.3:
+    image: spark-3.5.3:v3
+    tty: true
+    stdin_open: true
+    ports:
+      - "9090:8080"
+      - "7077:7077"
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+       - ./apps:/opt/spark/work-dir
+    
