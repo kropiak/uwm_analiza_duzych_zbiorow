@@ -3,6 +3,7 @@ services:
     image: spark-3.5.3:v3
     tty: true
     stdin_open: true
+    command: bash
     ports:
       - "9090:8080"
       - "7077:7077"
