@@ -54,6 +54,14 @@ Wykonanie tego polecenia będzie wymagało aktywnego połączenia z Internetem i
 
 Jeżeli proces budowania obrazu Docker zakończył się poprawnie sprawdź w aplikacji Docker Desktop czy obraz jest widoczny w zakładce `Images`.
 
+Jeżeli nazwa obrazu powinna być zmieniona (np. z <none>) to możemy to wykonać poprzez polecenie poniżej:
+
+```bash
+# d583c3ac45fd trzeba zastąpić skrótem konkretnego obrazu, można
+# to skopiować z aplikacji Docker Desktop
+docker image tag d583c3ac45fd nowa_nazwa_obrazu:nowy_tag
+```
+
 **Krok 3**  
 
 Z racji tego, że kontenery nie utrwalają żadnych zmian w systemie plików, które dokonały się w trakcie jego pracy pomiędzy kolejnymi uruchomieniami kontenera, potrzebujemy miejsca, w którym najważniejsze pliki z aplikacjami i danymi będziemy przechowywać w lokalnym systemie plików.
