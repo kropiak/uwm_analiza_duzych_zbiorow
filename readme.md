@@ -1,6 +1,6 @@
 # Przetwarzanie dużych zbiorów danych
 
-### Semestr 2024/2025
+### Semestr 2026Z
 
 ## 0. Wstęp i wymagania techniczne.
 
@@ -8,25 +8,24 @@ Ekosystem istniejący na rynku wokół zagadnień Big Data jest ogromny, stąd p
 
 W trakcie zajęć przedstawione zostaną poniższe narzędzia:
 * optymalizacja danych przetwarzanych za pomocą biblioteki pandas,
-* biblioteka Dask,
-* wprowadzenie do systemu Spark,
-* PySpark
+* biblioteka Dask - Dask DataFrame, Dask Array, Dask Futures,
+* wprowadzenie do PySpark,
 * formaty danych dla Big Data,
-* bazy danych NoSQL,
 * Apache Hadoop,
-* Apache Kafka,
+* hurtownia danych,
+* Apache AirFlow,
 * wykorzystanie Apache Spark w rozproszonym ML.
 
-W trakcie zajęć będzie wykorzystywany interpreter **Pythona w wersji 3.11.9** oraz głównie oprogramowanie **Jupyter Lab** z dostępem poprzez przeglądarkę internetową.
+W trakcie zajęć będzie wykorzystywany interpreter **Pythona w wersji 3.13.* oraz 3.11 (dla PySpark)** oraz głównie oprogramowanie **Jupyter Lab** z dostępem poprzez przeglądarkę internetową.
 W późniejszej fazie zajęć, w zależności od możliwości, może pojawić się konieczność wykorzystania oprogramowania Docker.
 
 ## 1. Sylabus
 
-[Sylabus](17S2-ADZ2024Z-1.pdf)
+[Sylabus](./17S2O-24ADZD_2026Z_1712-SMU-DSwP_A_PRK2.pdf)
 
 ## 2. Forma zajęć
 
-Każdorazowo na zajęciach student otrzyma opisane przykłady wykorzystania danego narzędzia w formie pliku cyfrowego.
+Każdorazowo na zajęciach student otrzyma opisane przykłady wykorzystania danego narzędzia w formie notatnika Jupyter.
 Prowadzący zaprezentuje sposób uruchomienia przykładów i wytłumaczy ich działanie. W każdym zestawie pojawią się zadania do samodzielnego wykonania bazujące na wcześniej zaprezentowanych przykładach.
 
 ## 3. Zaliczenie
@@ -40,6 +39,3 @@ Temat i zakres projektu zostanie przedstawiony na 2-3 spotkaniu.
 ## 4. Materiały
 
 Pozycje w sylabusie oraz dokumentacja dostarczana w poszczególnych zajęciach w postaci skróconej lub jako odwołania do oficjalnej dokumentacji.
-
-
-
