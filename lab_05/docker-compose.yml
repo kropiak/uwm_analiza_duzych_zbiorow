@@ -1,0 +1,16 @@
+services:
+  spark-lab5-2026:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spark-lab5-2026:4.1.4
+    container_name: spark-lab5-2026
+    tty: true
+    stdin_open: true
+    ports:
+      - "8888:8888"   # Jupyter Lab
+      - "4040:4040"   # Spark Application Driver Web UI
+      - "9090:8080"   # Spark Master Web UI (jeśli uruchomiono w trybie klastra)
+      - "7077:7077"   # Spark Master port
+    volumes:
+      - ./apps:/opt/spark/work-dir
