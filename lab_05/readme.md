@@ -36,6 +36,8 @@ $env:JAVA_HOME
 echo $JAVA_HOME
 ```
 
+> Instalatory: https://www.openlogic.com/openjdk-downloads
+
 ### Krok 2: Utworzenie i aktywacja środowiska wirtualnego Python 3.11
 W głównym katalogu projektu lub w folderze `lab_05` utwórz środowisko wirtualne oparte na interpreterze Pythona 3.11:
 
