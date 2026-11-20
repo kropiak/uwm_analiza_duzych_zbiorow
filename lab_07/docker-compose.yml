@@ -1,0 +1,15 @@
+services:
+  spark-delta-lab7:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spark-delta-lab7:4.1.4
+    container_name: spark-delta-lab7
+    tty: true
+    stdin_open: true
+    ports:
+      - "8888:8888"   # Jupyter Lab
+      - "4040:4040"   # Spark Web UI
+    volumes:
+      - ..:/opt/spark/work-dir
+    working_dir: /opt/spark/work-dir/lab_07

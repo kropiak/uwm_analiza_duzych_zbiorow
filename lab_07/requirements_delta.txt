@@ -1,0 +1,8 @@
+pyspark==4.1.4
+delta-spark==4.4.1
+duckdb>=1.1.0
+jupyterlab>=4.0.0
+pandas>=2.2.0
+pyarrow>=18.0.0
+matplotlib>=3.9.0
+tqdm>=4.66.0
