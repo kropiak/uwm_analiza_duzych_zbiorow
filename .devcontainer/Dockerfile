@@ -20,11 +20,10 @@ RUN pip install --no-cache-dir --upgrade pip \
 # Pre-caching zależności Maven/Ivy dla Delta Lake 4.4.1 w katalogu domowym użytkownika vscode,
 # aby pierwsze uruchomienie w Codespaces nie wymagało pobierania JAR-ów z internetu.
 USER vscode
-RUN python3 -c "from pyspark.sql import SparkSession; \
-from delta import configure_spark_with_delta_pip; \
-builder = SparkSession.builder.master('local[1]').appName('precache') \
+RUN python3 -c "import pyspark.sql, delta; \
+builder = pyspark.sql.SparkSession.builder.master('local[1]').appName('precache') \
     .config('spark.sql.extensions', 'io.delta.sql.DeltaSparkSessionExtension') \
     .config('spark.sql.catalog.spark_catalog', 'org.apache.spark.sql.delta.catalog.DeltaCatalog'); \
-spark = configure_spark_with_delta_pip(builder).getOrCreate(); \
+spark = delta.configure_spark_with_delta_pip(builder).getOrCreate(); \
 spark.range(1).write.format('delta').mode('overwrite').save('/tmp/precache_delta'); \
 spark.stop()" && rm -rf /tmp/precache_delta
